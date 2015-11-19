@@ -1,8 +1,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=serval-dna
-PKG_VERSION:=NICERFILTERS-20151119.4
-PKG_RELEASE=4
+PKG_VERSION:=NICERFILTERS-20151119.5
+PKG_RELEASE=5
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/umr-studenten/serval-dna.git
