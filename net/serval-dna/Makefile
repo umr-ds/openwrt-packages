@@ -5,9 +5,9 @@ PKG_VERSION:=UMR-DEVELOPMENT
 PKG_RELEASE=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/umr-studenten/serval-dna.git;development
+PKG_SOURCE_URL:=https://github.com/umr-studenten/serval-dna.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=HEAD
+PKG_SOURCE_VERSION:=development
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 
 PKG_FIXUP:=autoreconf
