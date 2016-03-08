@@ -41,8 +41,8 @@ define Package/serval-dna/description
   Serval DNA daemon on OpenWRT.
 endef
 
-TARGET_CFLAGS += -g -pg
-TARGET_LDFLAGS += -g -pg
+TARGET_CFLAGS+= -g 
+TARGET_LDFLAGS+= -g 
 
 define Build/Configure
 	echo "$(PKG_VERSION)" >$(PKG_BUILD_DIR)/$(CONFIGURE_PATH)/$(strip $(3))/VERSION.txt
