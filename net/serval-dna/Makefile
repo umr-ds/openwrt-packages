@@ -43,6 +43,7 @@ endef
 
 TARGET_CFLAGS+= -g 
 TARGET_LDFLAGS+= -g 
+RSTRIP:=/bin/true
 
 define Build/Configure
 	echo "$(PKG_VERSION)" >$(PKG_BUILD_DIR)/$(CONFIGURE_PATH)/$(strip $(3))/VERSION.txt
