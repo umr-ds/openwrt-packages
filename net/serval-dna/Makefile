@@ -1,8 +1,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=serval-dna
-PKG_VERSION:=UMR-OPENWRT
-PKG_RELEASE=1
+PKG_VERSION:=UMR-OPENWRT-2
+PKG_RELEASE=2
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/umr-ds/serval-dna.git
