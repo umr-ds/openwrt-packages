@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=serval-dna
-PKG_VERSION:=UMR-OPENWRT-4
-PKG_RELEASE=4
+PKG_VERSION:=UMR-OPENWRT-5
+PKG_RELEASE=5
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/umr-ds/serval-dna.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=7a9b6d5d722713bdaf8f2a67cea63222d728d87e
+PKG_SOURCE_VERSION:=6f388cec63a183175410327fa78101d2d30494c6
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 
 PKG_FIXUP:=autoreconf
@@ -22,7 +22,7 @@ define Package/serval-dna
 	SECTION:=net
 	CATEGORY:=Network
 	SUBMENU:=Mesh networking
-	DEPENDS:=+libpthread +librt
+	DEPENDS:=+libpthread +librt +libsodium
 	MAINTAINER:=Serval DNA Maintainer <serval-dna@servalproject.org>
 endef
 
