@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=serval-dna
-PKG_VERSION:=SERVALDEVELOP-20160606.1
-PKG_RELEASE=1
+PKG_RELEASE=12
+PKG_VERSION:=UMR-OPENWRT-$(PKG_RELEASE)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/servalproject/serval-dna.git
+PKG_SOURCE_URL:=https://github.com/umr-ds/serval-dna.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=development
+PKG_SOURCE_VERSION:=b60e80f8c58605db07177c3b3c48cf3f7a00b470
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 
 PKG_FIXUP:=autoreconf
