@@ -22,7 +22,7 @@ define Package/serval-dna
 	SECTION:=net
 	CATEGORY:=Network
 	SUBMENU:=Mesh networking
-	DEPENDS:=+librt
+	DEPENDS:=+libpthread +librt
 	MAINTAINER:=Serval DNA Maintainer <serval-dna@servalproject.org>
 endef
 
@@ -40,6 +40,10 @@ define Package/serval-dna/description
   The Serval Mesh Extender device is essentially a Wi-Fi router running the
   Serval DNA daemon on OpenWRT.
 endef
+
+TARGET_CFLAGS+= -g 
+TARGET_LDFLAGS+= -g 
+RSTRIP:=/bin/true
 
 define Build/Configure
 	echo "$(PKG_VERSION)" >$(PKG_BUILD_DIR)/$(CONFIGURE_PATH)/$(strip $(3))/VERSION.txt
